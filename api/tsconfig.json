@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declarationMap": true,
+        "sourceMap": true,
+        "outDir": "./build/",
+        "rootDir": "./sources/",
+        "composite": true,
+
+        /* Strict Type-Checking Options */
+        "strict": true,
+        "noImplicitAny": true,
+
+        /* Module Resolution Options */
+        "moduleResolution": "node",
+        "baseUrl": "./sources",
+        "paths": {
+            "@api/*": ["*"]
+        },
+        "esModuleInterop": true,
+
+        /* Experimental Options */
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    }
+}
