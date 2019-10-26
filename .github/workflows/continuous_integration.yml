@@ -6,12 +6,15 @@ jobs:
     name: "Code quality checks"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - name: "Clone the repository"
+        uses: actions/checkout@v1
       - name: "Use Node 11.x"
         uses: actions/setup-node@v1
         with:
           node-version: 11.x
       - name: "Install dependencies"
+        working-directory: ./api
         run: yarn install
       - name: "Run linter"
+        working-directory: ./api
         run: yarn run lint
