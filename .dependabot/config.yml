@@ -1,0 +1,6 @@
+version: 1
+update_configs:
+  # Look for updates daily
+  - package_manager: "javascript"
+    directory: "/api"
+    update_schedule: "daily"
