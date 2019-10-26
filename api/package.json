@@ -12,7 +12,9 @@
         "lint": "tslint -c tslint.json 'sources/**/*.ts'",
         "lint:fix": "tslint --fix -c tslint.json 'sources/**/*.ts'"
     },
-    "dependencies": {},
+    "dependencies": {
+        "winston": "^3.2.1"
+    },
     "devDependencies": {
         "@types/node": "^12.11.7",
         "prettier": "^1.18.2",

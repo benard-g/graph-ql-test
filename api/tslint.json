@@ -4,6 +4,8 @@
     "rulesDirectory": ["tslint-plugin-prettier"],
     "jsRules": {},
     "rules": {
+        "interface-name": false,
+        "one-line": false,
         "prettier": true
     }
 }
