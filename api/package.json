@@ -8,13 +8,17 @@
     "scripts": {
         "start": "node build/main.js",
         "build": "rimraf build && tsc",
-        "dev": "tsc-watch --onSuccess \"yarn start\""
+        "dev": "tsc-watch --onSuccess 'yarn start'",
+        "lint": "tslint -c tslint.json 'sources/**/*.ts'",
+        "lint:fix": "tslint --fix -c tslint.json 'sources/**/*.ts'"
     },
     "dependencies": {},
     "devDependencies": {
         "@types/node": "^12.11.7",
         "rimraf": "^3.0.0",
         "tsc-watch": "^4.0.0",
+        "tslint": "^5.20.0",
+        "tslint-config-prettier": "^1.18.0",
         "typescript": "^3.6.4"
     }
 }
