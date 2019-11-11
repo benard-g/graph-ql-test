@@ -16,7 +16,7 @@
         "winston": "^3.2.1"
     },
     "devDependencies": {
-        "@types/node": "^12.11.7",
+        "@types/node": "^12.12.7",
         "prettier": "^1.18.2",
         "rimraf": "^3.0.0",
         "tsc-watch": "^4.0.0",
