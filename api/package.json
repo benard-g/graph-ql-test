@@ -7,7 +7,7 @@
     "private": true,
     "scripts": {
         "start": "node build/main.js",
-        "build": "rimraf build && tsc",
+        "build": "rimraf build tsconfig.tsbuildinfo && tsc -p tsconfig.json",
         "dev": "tsc-watch --onSuccess 'yarn start'",
         "lint": "eslint -c .eslintrc.js 'sources/**/*.ts'",
         "lint:fix": "yarn run lint --fix"
