@@ -15,9 +15,6 @@
         /* Module Resolution Options */
         "moduleResolution": "node",
         "baseUrl": "./sources",
-        "paths": {
-            "@api/*": ["*"]
-        },
         "esModuleInterop": true,
 
         /* Experimental Options */
