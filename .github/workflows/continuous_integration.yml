@@ -8,10 +8,10 @@ jobs:
     steps:
       - name: "Clone the repository"
         uses: actions/checkout@v1
-      - name: "Use Node 11.x"
+      - name: "Use Node 12.x"
         uses: actions/setup-node@v1
         with:
-          node-version: 11.x
+          node-version: 12.x
       - name: "Install dependencies"
         working-directory: ./api
         run: yarn install
